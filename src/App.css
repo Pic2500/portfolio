@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* === Background Animation === */
+@keyframes softGradient {
+  0% {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  }
+  50% {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  }
+  100% {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  }
+}
+
+body {
+  color: #333;
+  font-family: "Press Start 2P", monospace;
+  background-attachment: fixed; /* Pozadinski gradijent ostaje statičan */
+}
+
+/* === Main Container Styling === */
+.container {
+  animation: softGradient 10s ease infinite;
+  padding: 40px; /* Povećan padding za bolji izgled */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Navbar Custom Styling === */
+.navbar-container {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Styling for the navbar */
+.custom-navbar-nav {
+  display: flex !important;
+  justify-content: center;
+  gap: 4rem;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-brand {
+  margin-right: 9rem;
+}
+
+/* Styling for each nav item */
+.nav-item {
+  font-family: "Press Start 2P", monospace;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+/* Pixel-style glitch effect for the links */
+.glitch-link {
+  color: darkorchid !important;
+  position: relative;
+  animation: pixelWave 2s ease-in-out infinite;
+  transition: color 0.3s;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  padding: 0.5rem 1rem;
+}
+
+/* Hover effect */
+.glitch-link:hover {
+  color: #f9d423 !important;
+}
+
+/* Pixel Wave animation */
+@keyframes pixelWave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  75% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Glitch animation for the text */
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px #f0f, -2px -2px #0ff;
+    transform: translate(0);
+  }
+  20% {
+    text-shadow: -2px 2px #0ff, 2px -2px #f0f;
+    transform: translate(-1px, 1px);
+  }
+  40% {
+    text-shadow: 2px -2px #0ff, -2px 2px #f0f;
+    transform: translate(1px, -1px);
+  }
+  60% {
+    text-shadow: -2px -2px #f0f, 2px 2px #0ff;
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    text-shadow: 2px 2px #0ff, -2px -2px #f0f;
+    transform: translate(1px, -1px);
+  }
+  100% {
+    text-shadow: 2px 2px #f0f, -2px -2px #0ff;
+    transform: translate(0);
+  }
+}
+
+/* === Mobile and Tablet Responsiveness === */
+@media (max-width: 768px) {
+  .custom-navbar-nav {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+    margin-right: 0;
+  }
+
+  /* Increase padding in container */
+  .container {
+    padding: 20px;
+  }
+
+  .glitch-link {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .glitch-link {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .nav-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* === Contact Page Styling === */
+.contact-container {
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-image {
+  margin-left: 20px;
+}
+
+.contact-footer-container {
+  background-color: lightslategray;
+  padding: 20px 0;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+}
+
+.contact-footer h4 {
+  margin-bottom: 20px;
+}
+
+.contact-footer p {
+  font-size: 1.2rem;
+}
+
+.contact-footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
