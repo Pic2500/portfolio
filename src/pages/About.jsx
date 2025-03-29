@@ -7,7 +7,7 @@ function About() {
       <div className="about-content">
         <p>
           Hi, I'm <strong>Domagoj Pintar</strong>, born on{" "}
-          <strong>28th March 1998</strong> in <strong>Petrinja</strong>. I
+          <strong>28th March 1998</strong> in <strong>Sisak</strong>. I
           graduated from <strong>Tehnička škola Sisak</strong> as a{" "}
           <strong>Technician for Electronics</strong>.
         </p>
