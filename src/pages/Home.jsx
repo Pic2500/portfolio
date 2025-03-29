@@ -4,15 +4,7 @@ import PokemonImage from "../assets/gengar.png";
 
 function Home() {
   return (
-    <div
-      className="container-fluid d-flex align-items-center justify-content-center"
-      style={{
-        height: "100vh",
-        background: "rgba(255, 255, 255, 0.85)",
-        borderRadius: "15px",
-        boxShadow: "0 4px 15px rgba(0, 0, 0, 0.1)",
-      }}
-    >
+    <div className="container-fluid d-flex align-items-center justify-content-center">
       <div className="row w-100">
         <div className="col-md-6 text-center text-md-start">
           <h1>Welcome to My Portfolio!</h1>
@@ -27,7 +19,7 @@ function Home() {
             the power of clean, well-structured code to bring innovative ideas
             to life.
           </p>
-          <Link to="/projects" className="btn btn-primary btn-lg mt-4">
+          <Link to="/projects" className="btn btn-warning btn-lg mt-4">
             Explore My Work
           </Link>
         </div>

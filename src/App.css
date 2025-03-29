@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 
 /* === Background Animation === */
 @keyframes softGradient {
@@ -15,8 +17,12 @@
 
 body {
   color: #333;
-  font-family: "Press Start 2P", monospace;
+  font-family: "Nunito", sans-serif;
   background-attachment: fixed; /* Pozadinski gradijent ostaje statičan */
+}
+
+h1 {
+  font-weight: 900;
 }
 
 /* === Main Container Styling === */
@@ -46,6 +52,8 @@ body {
 
 .navbar-brand {
   margin-right: 9rem;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
 /* Styling for each nav item */
@@ -211,4 +219,16 @@ body {
 
 .contact-footer a:hover {
   text-decoration: underline;
+}
+
+.project-img {
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .project-img {
+  transform: scale(1.03);
 }

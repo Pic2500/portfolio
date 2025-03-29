@@ -7,7 +7,7 @@ function Contact() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <h2>Contact Me</h2>
+            <h1>Contact Me</h1>
             <p className="lead">
               Feel free to reach out to me via any of the methods below. I'm
               always open to new opportunities and collaborations!

@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Project1 from "../assets/Pokemon.png";
+import Project2 from "../assets/Film.png";
+import Project3 from "../assets/Zaposlenici.png";
+import Project4 from "../assets/Chuck.png";
 
 const projects = [
   {
@@ -12,32 +15,38 @@ const projects = [
   },
   {
     id: 2,
-    name: "Project 2",
-    description: "A brief description of Project 2",
-    image: "/images/project2.jpg",
+    name: "Filmovi Recenzija",
+    description: "Stranica za recenziranje filmova",
+    image: Project2,
   },
   {
     id: 3,
-    name: "Project 3",
-    description: "A brief description of Project 3",
-    image: "/images/project3.jpg",
+    name: "Zaposlenici",
+    description: "Popis Zaposlenika za tvrtke",
+    image: Project3,
+  },
+  {
+    id: 4,
+    name: "Chuck Norris jokes search",
+    description: "Chuck Norris joke search API",
+    image: Project4,
   },
 ];
 
 function Projects() {
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">My Projects</h2>
+      <h1 className="text-center mb-4">My Projects</h1>
       <div className="row">
         {projects.map((project) => (
-          <div key={project.id} className="col-md-4 mb-4">
-            <div className="card">
+          <div key={project.id} className="col-md-6 mb-5">
+            <div className="card shadow-lg border-0">
               <img
                 src={project.image}
-                className="card-img-top"
+                className="card-img-top project-img"
                 alt={project.name}
               />
-              <div className="card-body">
+              <div className="card-body text-center">
                 <h5 className="card-title">{project.name}</h5>
                 <p className="card-text">{project.description}</p>
                 <Link
