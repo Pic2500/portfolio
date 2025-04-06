@@ -3,7 +3,7 @@ import ContactImage from "../assets/charizard.png"; // Možete dodati sliku koja
 
 function Contact() {
   return (
-    <div className="contact-container" style={{ padding: "60px 0" }}>
+    <div className="contact-container fade-in-up" style={{ padding: "60px 0" }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">

@@ -58,7 +58,7 @@ function ProjectDetails() {
   }
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 fade-in-up">
       <h2>{project.name} - Details</h2>
       <div className="row">
         <div className="col-md-6">
