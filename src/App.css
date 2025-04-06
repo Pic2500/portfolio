@@ -15,6 +15,26 @@
   }
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-in-up-delay {
+  animation-delay: 0.4s;
+}
+
 body {
   color: #333;
   font-family: "Nunito", sans-serif;

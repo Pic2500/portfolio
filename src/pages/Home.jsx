@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="container-fluid d-flex align-items-center justify-content-center">
       <div className="row w-100">
-        <div className="col-md-6 text-center text-md-start">
+        <div className="col-md-6 text-center text-md-start fade-in-up">
           <h1>Welcome to My Portfolio!</h1>
           <p className="lead">
             Hi! I'm Domagoj Pintar, a passionate Front-End Developer with a love
@@ -24,7 +24,7 @@ function Home() {
           </Link>
         </div>
 
-        <div className="col-md-6 d-none d-md-block">
+        <div className="col-md-6 d-none d-md-block fade-in-up fade-in-up-delay">
           <img
             src={PokemonImage}
             alt="Pokemon"
