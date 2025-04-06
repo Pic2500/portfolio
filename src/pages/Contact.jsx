@@ -1,5 +1,5 @@
 import React from "react";
-import ContactImage from "../assets/charizard.png"; // Možete dodati sliku koja vizualno uljepšava kontakt sekciju
+import ContactImage from "../assets/charizard.png";
 
 function Contact() {
   return (

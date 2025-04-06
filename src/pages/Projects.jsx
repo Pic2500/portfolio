@@ -1,38 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-import Project1 from "../assets/Pokemon.png";
-import Project2 from "../assets/Film.png";
-import Project3 from "../assets/Zaposlenici.png";
-import Project4 from "../assets/Chuck.png";
-
-const projects = [
-  {
-    id: 1,
-    name: "Project Pokemoni",
-    description: "Pokemoni 2D igrica",
-    image: Project1,
-  },
-  {
-    id: 2,
-    name: "Filmovi Recenzija",
-    description: "Stranica za recenziranje filmova",
-    image: Project2,
-  },
-  {
-    id: 3,
-    name: "Zaposlenici",
-    description: "Popis Zaposlenika za tvrtke",
-    image: Project3,
-  },
-  {
-    id: 4,
-    name: "Chuck Norris jokes search",
-    description: "Chuck Norris joke search API",
-    image: Project4,
-  },
-];
-
 function Projects() {
   return (
     <div className="container mt-5 fade-in-up">
@@ -63,5 +28,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;
