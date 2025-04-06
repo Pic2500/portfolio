@@ -34,7 +34,7 @@ const projects = [
     description: "Popis Zaposlenika",
     image: Project3,
     details:
-      "Mogućnost provjere zaposlenika po imenu, prezimenu, broju mobitela, maila te dodavanje, brisanje ili uređivanje zaposlenika.",
+      "Mogućnost provjere zaposlenika po imenu,prezimenu,broju mobitela,maila te dodavanje,brisanje ili uređivanje zaposlenika",
     technologies: ["React", "Node.js"],
     github: "https://github.com/Pic2500/Project",
   },
@@ -43,7 +43,7 @@ const projects = [
     name: "Chuck Norris jokes search",
     description: "Chuck Norris joke search API",
     image: Project4,
-    details: "Mogućnost pretrage viceva po riječima, te resetiranje searcha.",
+    details: "Mogućnost pretreage joke-a po riječima , te resetiranje searchaW",
     technologies: ["HTML", "CSS", "JavaScript", "API"],
     github: "https://github.com/Pic2500/Project",
   },
@@ -54,27 +54,24 @@ function ProjectDetails() {
   const project = projects.find((p) => p.id === parseInt(id));
 
   if (!project) {
-    return (
-      <div className="container mt-5 fade-in-up">Projekt nije pronađen</div>
-    );
+    return <div>Projekt nije pronađen</div>;
   }
 
   return (
-    <div className="container mt-5 fade-in-up">
-      <h2 className="text-center mb-4">{project.name} - Details</h2>
-      <div className="row align-items-center">
-        <div className="col-md-6 mb-4">
+    <div className="container mt-5 ">
+      <h2>{project.name} - Details</h2>
+      <div className="row">
+        <div className="col-md-6">
           <img
             src={project.image}
-            className="img-fluid rounded shadow"
+            className="img-fluid project-image"
             alt={project.name}
           />
         </div>
         <div className="col-md-6">
-          <h4>Description</h4>
+          <h3>Description</h3>
           <p>{project.details}</p>
-
-          <h4>Technologies Used</h4>
+          <h3>Technologies Used</h3>
           <ul>
             {project.technologies.map((tech, index) => (
               <li key={index}>{tech}</li>
@@ -94,11 +91,9 @@ function ProjectDetails() {
         </div>
       </div>
 
-      <div className="text-center mt-5">
-        <Link to="/projects" className="btn btn-secondary">
-          Back to Projects
-        </Link>
-      </div>
+      <Link to="/projects" className="btn btn-secondary mt-4">
+        Back to Projects
+      </Link>
     </div>
   );
 }
