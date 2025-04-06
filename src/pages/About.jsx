@@ -1,3 +1,5 @@
+import React from "react";
+
 function About() {
   return (
     <div className="container fade-in-up">
@@ -38,3 +40,5 @@ function About() {
     </div>
   );
 }
+
+export default About;
