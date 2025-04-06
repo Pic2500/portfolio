@@ -35,7 +35,7 @@ const projects = [
     image: Project3,
     details:
       "Mogućnost provjere zaposlenika po imenu,prezimenu,broju mobitela,maila te dodavanje,brisanje ili uređivanje zaposlenika",
-    technologies: ["React", "Node.js", "MongoDB"],
+    technologies: ["React", "Node.js"],
     github: "https://github.com/Pic2500/Project",
   },
   {
