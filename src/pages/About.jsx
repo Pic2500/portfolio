@@ -2,11 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="container fade-in">
-      {" "}
-      {/* Apply fade-in here */}
+    <div className="container ">
       <h1 className="text-center mb-4">About Me</h1>
-      <div className="about-content">
+      <div className="about-content fade-in-up">
         <p>
           Hi, I'm <strong>Domagoj Pintar</strong>, born on{" "}
           <strong>28th March 1998</strong> in <strong>Sisak</strong>. I
