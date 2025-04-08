@@ -35,7 +35,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="container mt-5 ">
+    <div className="container mt-5 fade-in-up">
       <h1 className="text-center mb-4">My Projects</h1>
       <div className="row">
         {projects.map((project) => (
