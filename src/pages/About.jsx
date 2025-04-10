@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="container ">
+    <div>
       <h1 className="text-center mb-4 fade-in-up">About Me</h1>
       <div className="about-content fade-in-up">
         <p>

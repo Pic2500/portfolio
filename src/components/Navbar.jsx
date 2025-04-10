@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fade-in-up">
+    <nav className="navbar navbar-expand-lg navbar-transparent fade-in-up">
       <div className="container">
         <Link className="navbar-brand" to="/">
           My Portfolio
@@ -21,8 +21,6 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav custom-navbar-nav">
-            {" "}
-            {/* Dodajemo custom klasu */}
             <li className="nav-item">
               <Link className="nav-link glitch-link" to="/">
                 Home

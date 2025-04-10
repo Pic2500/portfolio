@@ -35,8 +35,8 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="container mt-5 ">
-      <h1 className="text-center mb-4 fade-in-up ">My Projects</h1>
+    <div className="mt-5">
+      <h1 className="text-center mb-4 fade-in-up">My Projects</h1>
       <div className="row">
         {projects.map((project) => (
           <div key={project.id} className="col-md-6 mb-5 fade-in-up">
@@ -49,10 +49,7 @@ function Projects() {
               <div className="card-body text-center">
                 <h5 className="card-title">{project.name}</h5>
                 <p className="card-text">{project.description}</p>
-                <Link
-                  to={`/project-details/${project.id}`}
-                  className="btn btn-primary"
-                >
+                <Link to={`/project-details/${project.id}`} className="btn btn">
                   View Details
                 </Link>
               </div>

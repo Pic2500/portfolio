@@ -34,7 +34,7 @@ const projects = [
     description: "Popis Zaposlenika",
     image: Project3,
     details:
-      "Mogućnost provjere zaposlenika po imenu,prezimenu,broju mobitela,maila te dodavanje,brisanje ili uređivanje zaposlenika",
+      "Mogućnost provjere zaposlenika po imenu, prezimenu, broju mobitela, maila te dodavanje, brisanje ili uređivanje zaposlenika",
     technologies: ["React", "Node.js"],
     github: "https://github.com/Pic2500/Project",
   },
@@ -43,7 +43,7 @@ const projects = [
     name: "Chuck Norris jokes search",
     description: "Chuck Norris joke search API",
     image: Project4,
-    details: "Mogućnost pretreage joke-a po riječima , te resetiranje searchaW",
+    details: "Mogućnost pretrage joke-a po riječima, te resetiranje searcha.",
     technologies: ["HTML", "CSS", "JavaScript", "API"],
     github: "https://github.com/Pic2500/Project",
   },
@@ -54,11 +54,19 @@ function ProjectDetails() {
   const project = projects.find((p) => p.id === parseInt(id));
 
   if (!project) {
-    return <div>Projekt nije pronađen</div>;
+    return (
+      <div className="mt-5 text-center">
+        <h2>Project Not Found</h2>
+        <p>Sorry, we couldn't find the project you're looking for.</p>
+        <Link to="/projects" className="btn btn-secondary mt-4">
+          Back to Projects
+        </Link>
+      </div>
+    );
   }
 
   return (
-    <div className="container mt-5 ">
+    <div className="mt-5">
       <h2>{project.name} - Details</h2>
       <div className="row">
         <div className="col-md-6">
