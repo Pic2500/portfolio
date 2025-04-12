@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import PokemonImage from "../assets/gengar.png";
+import clickSound from "../assets/sounds/click.wav"; // Ensure this path is correct
 
 function Home() {
+  const playClickSound = () => {
+    const audio = new Audio(clickSound);
+    audio.play();
+  };
+
+  useEffect(() => {
+    document.body.style.transition = "background-color 1s ease"; // Smooth background transition
+    document.body.style.backgroundColor = "#f0f8ff"; // New background color for Home page
+  }, []);
+
   return (
     <div className="container-fluid d-flex align-items-center justify-content-center">
       <div className="row w-100">
@@ -19,7 +30,11 @@ function Home() {
             the power of clean, well-structured code to bring innovative ideas
             to life.
           </p>
-          <Link to="/projects" className="btn btn-warning btn-lg mt-4">
+          <Link
+            to="/projects"
+            className="btn btn-warning btn-lg mt-4"
+            onClick={playClickSound} // Play sound on button click
+          >
             Explore My Work
           </Link>
         </div>

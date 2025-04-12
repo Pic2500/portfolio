@@ -22,7 +22,7 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav custom-navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link glitch-link" to="/">
+              <Link className="nav-link glitch-link" to="/home">
                 Home
               </Link>
             </li>
