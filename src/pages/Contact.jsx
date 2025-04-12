@@ -1,5 +1,6 @@
 import React from "react";
-import ContactImage from "../assets/charizard.png";
+
+import ContactImageGif from "../assets/mascot/contact.gif";
 
 function Contact() {
   return (
@@ -38,7 +39,7 @@ function Contact() {
         </div>
 
         <div className="col-md-6">
-          <img src={ContactImage} alt="Contact" className="img-fluid" />
+          <img src={ContactImageGif} alt="Contact" className="img-fluid" />
         </div>
       </div>
 

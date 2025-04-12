@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import PokemonImage from "../assets/gengar.png";
+import robot from "../assets/mascot/robot.gif"; // Replace with your actual GIF file path
 import clickSound from "../assets/sounds/click.wav"; // Ensure this path is correct
 
 function Home() {
@@ -41,10 +41,10 @@ function Home() {
 
         <div className="col-md-6 d-none d-md-block fade-in-up fade-in-up-delay">
           <img
-            src={PokemonImage}
-            alt="Pokemon"
+            src={robot} // Replace Gengar image with the animated GIF
+            alt="Mascot Animation"
             className="img-fluid"
-            style={{ maxHeight: "500px", objectFit: "contain" }}
+            style={{ maxHeight: "500px", objectFit: "contain" }} // Adjust the styling as needed
           />
         </div>
       </div>

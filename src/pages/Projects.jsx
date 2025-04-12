@@ -49,7 +49,10 @@ function Projects() {
               <div className="card-body text-center">
                 <h5 className="card-title">{project.name}</h5>
                 <p className="card-text">{project.description}</p>
-                <Link to={`/project-details/${project.id}`} className="btn btn">
+                <Link
+                  to={`/project-details/${project.id}`}
+                  className="btn btn-warning"
+                >
                   View Details
                 </Link>
               </div>
