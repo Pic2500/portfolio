@@ -96,7 +96,7 @@ h1 {
 /* === Landing Page Styling === */
 .landing-page {
   position: relative;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
   background: var(--main-gradient);
   display: flex;
   justify-content: center;
@@ -111,7 +111,7 @@ h1 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 0; /* Behind other content */
+  z-index: 0;
 }
 
 .particle {
@@ -142,7 +142,7 @@ h1 {
 /* === Button Styling === */
 .landing-button-container {
   position: relative;
-  z-index: 1; /* Ensures button is above particles */
+  z-index: 1;
 }
 
 .start-button {
@@ -218,97 +218,138 @@ h1 {
   transform: scale(1.05);
 }
 
-/* === Responsive === */
+/* === Project Details Page Styling === */
+.project-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: #fdfdfd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 4rem auto;
+  align-items: flex-start;
+}
+
+/* Naslov projekta */
+.project-title {
+  width: 100%;
+  font-size: 2.5rem;
+  font-family: "Bungee Spice", cursive;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Slika */
+.project-image {
+  flex: 1 1 45%;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Detalji (opis, vještine, gumbi itd.) */
+.project-info {
+  flex: 1 1 50%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Naslovi sekcija u detaljima */
+.detail-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #222;
+  margin-top: 1.5rem;
+  font-family: "Bungee Spice", cursive;
+}
+
+/* Opis */
+.detail-paragraph {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+/* Lista vještina ili značajki */
+.detail-list {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.detail-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* GitHub gumb */
+.github-link a {
+  font-weight: bold;
+  background: #24292e;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.github-link a:hover {
+  background: #444d56;
+}
+
+/* Sekundarni gumb */
+.btn-secondary {
+  background: #6c757d;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #5a6268;
+}
+
+/* Ako projekt nije pronađen */
+.project-not-found {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.not-found-title {
+  font-family: "Bungee Spice", cursive;
+  font-size: 2rem;
+}
+
+/* Responsive dizajn za manje ekrane */
 @media (max-width: 768px) {
-  .custom-navbar-nav {
+  .project-details-container {
     flex-direction: column;
-    gap: 2rem;
+    align-items: center;
     text-align: center;
   }
-  .navbar-brand {
-    font-size: 1.2rem;
-    margin-right: 0;
+
+  .project-title {
+    text-align: center;
   }
-  .container {
-    padding: 20px;
+
+  .project-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
   }
-  .glitch-link {
-    font-size: 1rem;
-    letter-spacing: 2px;
+
+  .project-info {
+    width: 100%;
   }
-  .nav-item {
-    font-size: 1rem;
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar-brand {
-    font-size: 1rem;
-  }
-  .glitch-link {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-  }
-  .container {
-    padding: 15px;
-  }
-  .nav-item {
-    font-size: 0.9rem;
-  }
-}
-
-/* === Contact & Projects === */
-.contact-container {
-  padding: 60px 0;
-  position: relative;
-  z-index: 1;
-}
-
-.contact-image {
-  margin-left: 20px;
-}
-
-.contact-footer-container {
-  background-color: lightslategray;
-  padding: 20px 0;
-  margin-top: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-footer {
-  background-color: #f8f9fa;
-  text-align: center;
-  padding: 30px 0;
-  border-top: 1px solid #ddd;
-}
-
-.contact-footer h4 {
-  margin-bottom: 20px;
-}
-
-.contact-footer p {
-  font-size: 1.2rem;
-}
-
-.contact-footer a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.contact-footer a:hover {
-  text-decoration: underline;
-}
-
-.project-img {
-  height: 300px;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover .project-img {
-  transform: scale(1.03);
 }

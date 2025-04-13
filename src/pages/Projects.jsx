@@ -9,26 +9,23 @@ import Project4 from "../assets/Chuck.png";
 const projects = [
   {
     id: 1,
-    name: "Project Pokemoni",
-    description: "Pokemoni 2D igrica",
+    name: "Project Pokemon",
     image: Project1,
   },
   {
     id: 2,
-    name: "Filmovi Recenzija",
-    description: "Stranica za recenziranje filmova",
+    name: "Movie Review App",
     image: Project2,
   },
   {
     id: 3,
-    name: "Zaposlenici",
-    description: "Popis Zaposlenika za tvrtke",
+    name: "Employee Management System",
+
     image: Project3,
   },
   {
     id: 4,
-    name: "Chuck Norris jokes search",
-    description: "Chuck Norris joke search API",
+    name: "Chuck Norris Joke Search",
     image: Project4,
   },
 ];
@@ -48,7 +45,7 @@ function Projects() {
               />
               <div className="card-body text-center">
                 <h5 className="card-title">{project.name}</h5>
-                <p className="card-text">{project.description}</p>
+
                 <Link
                   to={`/project-details/${project.id}`}
                   className="btn btn-warning"
