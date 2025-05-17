@@ -5,6 +5,7 @@ import Project1 from "../assets/Pokemon.png";
 import Project2 from "../assets/Film.png";
 import Project3 from "../assets/Zaposlenici.png";
 import Project4 from "../assets/Chuck.png";
+import Project5 from "../assets/Chuck.png";
 
 const projects = [
   {
@@ -12,6 +13,8 @@ const projects = [
     name: "Project Pokemon",
     description: "Retro Pokémon game",
     image: Project1,
+    liveDemo: "https://pokemon-v1-six.vercel.app/",
+
     details: [
       { type: "title", content: "Details:" },
       {
@@ -51,6 +54,7 @@ const projects = [
     description:
       "Movie review web app where users can rate and manage their favorite films.",
     image: Project2,
+    liveDemo: "https://film-recenzija.vercel.app/",
     details: [
       { type: "title", content: "Details:" },
       {
@@ -93,6 +97,7 @@ const projects = [
     name: "Employee Management System",
     description: "Simple HR system for managing employee data.",
     image: Project3,
+    liveDemo: "https://project-rosy-chi.vercel.app/",
     details: [
       { type: "title", content: "Details:" },
       {
@@ -137,6 +142,7 @@ const projects = [
     name: "Chuck Norris Joke Search",
     description: "Search for random Chuck Norris jokes using an external API.",
     image: Project4,
+    liveDemo: "",
     details: [
       { type: "title", content: "Details:" },
       {
@@ -167,6 +173,44 @@ const projects = [
       },
     ],
     technologies: ["HTML", "CSS", "JavaScript", "API", "Bootstrap"],
+    github: "https://github.com/Pic2500/Project",
+  },
+  {
+    id: 5,
+    name: "TO-DO-LIST",
+    description: "Your own to do list",
+    image: Project5,
+    liveDemo: "",
+    details: [
+      { type: "title", content: "Details:" },
+      {
+        type: "paragraph",
+        content:
+          "To do list where you can put in what you need to do and check it if you done it or delete it.",
+      },
+      { type: "title", content: "Key Features:" },
+      {
+        type: "list",
+        content: [
+          "Search jokes by any keyword.",
+          "View multiple joke results fetched from the API.",
+          "Reset the search to start over.",
+          "Responsive and minimal design for quick use.",
+        ],
+      },
+      { type: "title", content: "What I Learned:" },
+      {
+        type: "list",
+        content: [
+          "How to work with APIs and fetch data asynchronously using fetch().",
+          "Parsing JSON responses and dynamically rendering content.",
+          "Handling user input and updating the UI based on search terms.",
+          "Implementing basic UI/UX logic (loading, resetting, empty results).",
+          "Building a simple but clean layout using CSS and Bootstrap.",
+        ],
+      },
+    ],
+    technologies: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/Pic2500/Project",
   },
 ];
@@ -231,8 +275,8 @@ function ProjectDetails() {
         <div className="project-info">
           {renderDetails(project.details)}
 
-          {project.github && (
-            <div className="github-link">
+          <div className="button-links">
+            {project.github && (
               <a
                 href={project.github}
                 className="btn btn-dark"
@@ -241,8 +285,19 @@ function ProjectDetails() {
               >
                 View on GitHub
               </a>
-            </div>
-          )}
+            )}
+
+            {project.liveDemo && (
+              <a
+                href={project.liveDemo}
+                className="btn-live-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         </div>
       </div>
 

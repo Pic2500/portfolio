@@ -1,26 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/Logo.svg";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-transparent fade-in-up">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
+      <div className="container d-flex align-items-center justify-content-between">
+        <Link className="navbar-brand me-5" to="/">
           My Portfolio
         </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav custom-navbar-nav">
+
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav mx-auto gap-4">
+            {" "}
+            {/* razmak između linkova */}
             <li className="nav-item">
               <Link className="nav-link glitch-link" to="/home">
                 Home
@@ -43,6 +36,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
+
+        <img src={logo} alt="DP Logo" className="logo ms-5" />
       </div>
     </nav>
   );
