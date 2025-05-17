@@ -142,7 +142,7 @@ const projects = [
     name: "Chuck Norris Joke Search",
     description: "Search for random Chuck Norris jokes using an external API.",
     image: Project4,
-    liveDemo: "",
+    liveDemo: "https://chucknorris-pi.vercel.app/",
     details: [
       { type: "title", content: "Details:" },
       {

@@ -7,6 +7,7 @@
 /* === Root Variables === */
 :root {
   --main-gradient: linear-gradient(135deg, #fceabb, #f8b500);
+  --main-gradient2: linear-gradient(135deg, black, #fceabb);
 }
 
 /* === Animations === */
@@ -17,6 +18,15 @@
   }
   50% {
     background: linear-gradient(135deg, #f5f5dc, #efe2ba);
+  }
+}
+@keyframes softGradient2 {
+  0%,
+  100% {
+    background: gradient2(135deg, #efe2ba, #f5f5dc84);
+  }
+  50% {
+    background: gradient2(135deg, #f5f5dc, #efe2ba);
   }
 }
 
@@ -67,7 +77,7 @@
 body {
   color: #333;
   font-family: "Nunito", sans-serif;
-  background: var(--main-gradient);
+  background: var(--main-gradient2);
   background-attachment: fixed;
 }
 
